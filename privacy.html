@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Gaza OS</title>
+  <meta name="description" content="How Gaza OS accesses, stores and uses information, including information received through YouTube API Services.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">Gaza OS</a>
+    <nav>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated: 2026-10-05</p>
+
+    <p>This policy describes what information Gaza OS (the "API Client") accesses, collects, stores and uses, how and why, and what you can do about it. Gaza OS is operated by Marie Segot, 60 rue François 1er, 75008 Paris, France ("we", "us"). Contact: contact@thegazalabs.com.</p>
+
+    <h2>1. YouTube API Services</h2>
+    <p><strong>Gaza OS uses YouTube API Services.</strong> By connecting a YouTube channel to Gaza OS you also agree to be bound by the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>, and your information is also handled by Google as described in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+    <p>Gaza OS's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>2. Information we access</h2>
+    <p>Only after you authorise Gaza OS on Google's OAuth 2.0 consent screen, and only for the two scopes below:</p>
+    <ul>
+      <li><code>youtube.readonly</code> — we call <code>channels.list</code> once, when you connect, to read the identifier and title of the channel you authorised.</li>
+      <li><code>youtube.upload</code> — we call <code>videos.insert</code> to upload a video to that channel. This happens only when you click "upload" for a specific video, after you chose its title, description and visibility and confirmed the upload.</li>
+    </ul>
+    <p>Gaza OS does not read your videos, comments, subscribers, analytics or any other YouTube data, and it requests no other scope.</p>
+
+    <h2>3. Information we store</h2>
+    <ul>
+      <li><strong>Channel record:</strong> the channel identifier, channel title, connection status and the permissions derived from it, stored in our database for as long as the channel is connected.</li>
+      <li><strong>OAuth tokens:</strong> access and refresh tokens are held in the application's memory only. They are never written to our database or to our logs, and they disappear when the application restarts or when you disconnect the channel.</li>
+      <li><strong>Video files you add:</strong> files you choose to add to Gaza OS for upload are kept in Gaza OS's private storage until you or we delete them.</li>
+      <li><strong>Upload result:</strong> the identifier and address of the video YouTube created, so you can find it.</li>
+      <li><strong>Account data of Gaza OS operators:</strong> an e-mail address, display name, role and a password hash (Argon2id) for people authorised to use Gaza OS. Gaza OS has no public sign-up.</li>
+    </ul>
+
+    <h2>4. How we use it</h2>
+    <p>Solely to provide the features you invoke: showing which channel a video will be uploaded to, and uploading the video you selected with the settings you chose. We do not use it for advertising, profiling or any other purpose.</p>
+
+    <h2>5. Sharing</h2>
+    <p>We do not sell your information and we do not share information obtained through YouTube API Services with third parties, except with Google/YouTube as part of the requests you initiate. We do not serve advertisements and Gaza OS contains no third-party analytics or tracking scripts.</p>
+
+    <h2>6. Revoking access and deleting your data</h2>
+    <p>You can revoke Gaza OS's access to your Google account at any time at <a href="https://security.google.com/settings/security/permissions" rel="noopener">https://security.google.com/settings/security/permissions</a>.</p>
+    <p>If you revoke access, or ask us to delete your data by writing to contact@thegazalabs.com, we delete the channel record and any tokens we hold, and the video files you added if you ask, within 7 calendar days.</p>
+
+    <h2>7. Security</h2>
+    <p>Access to Gaza OS requires an individual account; sessions use HTTP-only cookies and CSRF protection; passwords are stored only as Argon2id hashes; OAuth tokens are never persisted.</p>
+
+    <h2>8. Children</h2>
+    <p>Gaza OS is not directed to children. When a video is uploaded, the operator is asked to declare whether it is made for kids and is reminded that such content must be declared on YouTube.</p>
+
+    <h2>9. Changes</h2>
+    <p>If we change how we access, use or share information obtained through YouTube API Services, we will update this page and, where required, ask you to accept the new policy before continuing.</p>
+  </main>
+  <footer>
+    <a href="/">Home</a> · <a href="/terms.html">Terms of Service</a> ·
+    <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a> ·
+    <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>
+  </footer>
+</body>
+</html>

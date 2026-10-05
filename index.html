@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaza OS — operations cockpit</title>
+  <meta name="description" content="Gaza OS is a private operations cockpit that lets its operator prepare short videos and, only on the operator's explicit action, upload them to the YouTube channels the operator owns, through YouTube API Services.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="/">Gaza OS</a>
+    <nav>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Gaza OS</h1>
+    <p>Gaza OS is a private operations cockpit operated by Marie Segot. It helps its operator organise content production work and manage the publication of short videos to the operator's own channels.</p>
+
+    <h2>YouTube API Services</h2>
+    <p><strong>Gaza OS uses YouTube API Services.</strong> When the operator connects a YouTube channel, Gaza OS asks for permission through Google's OAuth 2.0 consent screen and requests two scopes only:</p>
+    <ul>
+      <li><code>https://www.googleapis.com/auth/youtube.upload</code> — to upload a video to the connected channel, and only when the operator clicks "upload" for that specific video.</li>
+      <li><code>https://www.googleapis.com/auth/youtube.readonly</code> — to read the connected channel's identifier and title, so the operator can see which channel a video will go to.</li>
+    </ul>
+    <p>Nothing is uploaded automatically. For every upload the operator chooses the title, description and visibility (public, unlisted or private), declares whether the video is made for kids, and confirms the YouTube Terms of Service certification.</p>
+    <p>By using Gaza OS to interact with YouTube, you agree to be bound by the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>. Information handled through YouTube API Services is described in our <a href="/privacy.html">Privacy Policy</a> and in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+    <p>You can revoke Gaza OS's access to your Google account at any time at <a href="https://security.google.com/settings/security/permissions" rel="noopener">https://security.google.com/settings/security/permissions</a>.</p>
+
+    <div class="callout">
+      <p class="muted" style="margin:0">Gaza OS is an independent product. It is not affiliated with, sponsored by or endorsed by YouTube or Google. YouTube is a trademark of Google LLC.</p>
+    </div>
+
+    <h2>Contact</h2>
+    <p>contact@thegazalabs.com</p>
+  </main>
+  <footer>
+    <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Service</a> ·
+    <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a> ·
+    <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>
+  </footer>
+</body>
+</html>
